@@ -78,9 +78,9 @@ function Skills() {
 
     return (
         <div name='skills'
-            className='bg-gradient-to-b from-gray-900 to-black w-full h-auto sm:min-h-screen sm:h-auto pt-[60px] pb-[10px]'>
-            <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white'>
-
+            className='bg-gradient-to-b from-gray-900 to-black w-full h-auto sm:min-h-screen sm:h-auto pt-[60px] pb-[10px] px-20'>
+            <div className='max-w-screen-lg mx-auto flex flex-col justify-center w-full h-full text-white'>
+                
                 <div>
                     <p className='text-4xl font-bold border-b-4 border-gray-500 p-2 inline'>Skills</p>
                     <p className='py-6'>These are the technologies I work with</p>
