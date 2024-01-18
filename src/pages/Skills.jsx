@@ -16,7 +16,7 @@ function Skills() {
     const techs = [
         {
             id: 1,
-            src: SpringBoot,
+            src: Java,
             title: 'Java',
             style: 'shadow-red-500'
         },
@@ -78,7 +78,7 @@ function Skills() {
 
     return (
         <div name='skills'
-            className='bg-gradient-to-b from-gray-900 to-black w-full h-auto sm:min-h-screen sm:h-auto pt-[60px] pb-[10px] px-0 sm:px-[80px] '>
+            className='bg-gradient-to-b from-gray-900 to-black w-full h-auto sm:min-h-screen sm:h-auto pt-[60px] pb-[10px] px-0 sm:px-[80px]'>
             <div className='max-w-screen-lg mx-auto flex flex-col justify-center w-full h-full text-white'>
                 
                 <div>
@@ -92,7 +92,7 @@ function Skills() {
                         <div 
                         key={id}
                         className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
-                            <img src={src} alt="" className='w-20 mx-auto' />
+                            <img src={src} alt="" className='w-20 h-20 mx-auto' />
                             <p className='mt-4'>{title}</p>
                         </div>
                     ))
@@ -106,26 +106,3 @@ function Skills() {
 }
 
 export default Skills
-
-
-{/* <div name='skill'
-    className='w-full h-screen bg-[#0a192f] text-gray-300'>
-
-        <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-            <div>
-                <p  className='text-4xl font-bold inline border-b-4 border-pink-600 '>Skills</p>
-                <p className='py-4'>These are the technologies I work with</p>
-            </div>
-
-            <div className='w-full grid grid-cols-2 sm:grid-cols-4 '>
-                <div>
-                    <img className='w-20 mx-auto' src={Java} alt="JAVA.Logo" />
-                    <p></p>
-                </div>
-
-                
-            </div>
-
-        </div>
-        
-    </div> */}

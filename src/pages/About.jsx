@@ -4,7 +4,7 @@ import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
 function About() {
     return (
         <div name='about'
-            className='w-full bg-gradient-to-b from-gray-800 to-black text-gray-300 h-auto sm:h-screen pt-[60px] pb-[10px] px-20'>
+            className='bg-gradient-to-b from-gray-900 to-black w-full h-auto sm:min-h-screen sm:h-auto pt-[60px] pb-[10px] px-0 sm:px-[80px]'>
             <div className='max-w-screen-lg mx-auto flex flex-col  w-full h-full text-white'>
                 
                 <div>
