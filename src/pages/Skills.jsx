@@ -78,7 +78,7 @@ function Skills() {
 
     return (
         <div name='skills'
-            className='bg-gradient-to-b from-gray-900 to-black w-full h-auto sm:min-h-screen sm:h-auto pt-[60px] pb-[10px] px-0 sm:px-[80px]'>
+            className='bg-gradient-to-b from-gray-900 to-black w-full h-auto sm:min-h-screen sm:h-auto pt-[60px] pb-[10px] px-[10px] sm:px-[50px] md:px-[100px]'>
             <div className='max-w-screen-lg mx-auto flex flex-col justify-center w-full h-full text-white'>
                 
                 <div>
@@ -86,7 +86,7 @@ function Skills() {
                     <p className='py-6'>These are the technologies I work with</p>
                 </div>
 
-                <div className='w-full grid grid-cols-2 sm:grid-cols-5 gap-8 text-center py-8 px-12 sm:px-0'>
+                <div className='w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-center py-8 px-12 sm:px-0'>
 
                     {techs.map(({ id, src, title, style }) => (
                         <div 

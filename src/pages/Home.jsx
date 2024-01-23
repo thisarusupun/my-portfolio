@@ -6,7 +6,7 @@ function Home() {
     return (
         <div
             name='home'
-            className='bg-gradient-to-b from-gray-900 to-black w-full h-auto sm:h-screen pt-[60px] pb-[10px]'>
+            className='bg-gradient-to-b from-gray-900 to-black w-full h-auto sm:h-screen pt-[60px] pb-[10px] px-[10px] sm:px-[50px] md:px-[100px]'>
 
             {/* container */}
             <div className='max-w-screen-lg mx-auto px-4 flex flex-col items-center justify-center h-full md:flex-row'>
@@ -17,13 +17,14 @@ function Home() {
                     <h2 className='text-3xl sm:text-5xl text-[#8892b0] py-6'>I'm a Full Stack Developer</h2>
 
                     <div>
-                        <button className='text-white group bg-gradient-to-b from-gray-900 to-black rounded-xl px-6 py-3 my-2 flex items-center shadow-sm hover:shadow-blue-600'>
+                        <button className='text-white group bg-gradient-to-b from-gray-900 to-black rounded-xl px-6 py-3 my-2 flex items-center shadow-sm shadow-gray-400 hover:shadow-blue-600'>
                             View Work
                             <span className='group-hover:rotate-90 duration-500'>
                                 <MdOutlineKeyboardArrowRight size={25} className='ml-1' />
                             </span>
                         </button>
                     </div>
+
                 </div>
 
                 <div>
