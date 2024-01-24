@@ -12,7 +12,7 @@ function Home() {
             <div className='max-w-screen-lg mx-auto px-4 flex flex-col items-center justify-center h-full md:flex-row'>
 
                 <div className='flex flex-col justify-center h-full px-4'>
-                    <p className='text-yellow-400'>Hi, My name is</p>
+                    <p className='text-yellow-400 text-2xl'>Hi, My name is</p>
                     <h1 className='text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>Thisaru Supun</h1>
                     <h2 className='text-3xl sm:text-5xl text-[#8892b0] py-6'>I'm a Full Stack Developer</h2>
 
