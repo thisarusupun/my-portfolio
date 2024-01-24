@@ -4,6 +4,8 @@ import moviereviews from "../assets/moviereviews.png"
 import employeems from "../assets/Employee-MS.png"
 import userregistration from "../assets/user-registration.png"
 import weatherapplication from "../assets/weather-application.png"
+import { GoCodeReview } from "react-icons/go"
+import { GoRocket } from "react-icons/go"
 
 function Projects() {
 
@@ -74,15 +76,15 @@ function Projects() {
 
 
                 <div className='grid items-center justify-center py-2'>
-                  <p className='text-center'>{name}</p>
+                  <p className='text-center hover:text-yellow-400 text-lg'>{name}</p>
 
                   <div className='w-full flex items-center justify-center py-2'>
 
-                    <button className="w-1/2 px-6 mx-2 py-1 duration-200 hover:scale-105 text-white bg-gradient-to-b from-gray-900 to-black rounded-full items-center shadow-sm shadow-gray-400 hover:shadow-blue-600"
-                    onClick={() => handleDemo({demo})}>Demo</button>
+                    <button className="w-1/2 px-6 mx-2 py-1 flex duration-200 hover:scale-105 text-white bg-gradient-to-b from-gray-900 to-black rounded-full items-center shadow-sm shadow-gray-400 hover:shadow-blue-600"
+                    onClick={() => handleDemo({demo})}>Demo <GoRocket className='pl-1' size={20}/></button>
 
-                    <button className="w-1/2 px-6 mx-2 py-1 duration-200 hover:scale-105 text-white bg-gradient-to-b from-gray-900 to-black rounded-full items-center shadow-sm shadow-gray-400 hover:shadow-blue-600"
-                    onClick={() => handleCode({code})}>Code</button>
+                    <button className="w-1/2 px-6 mx-2 py-1 flex duration-200 hover:scale-105 text-white bg-gradient-to-b from-gray-900 to-black rounded-full items-center shadow-sm shadow-gray-400 hover:shadow-blue-600"
+                    onClick={() => handleCode({code})}>Code <GoCodeReview className='pl-1' size={20}/></button>
                   </div>
                 </div>
 
