@@ -1,6 +1,7 @@
 import React from 'react'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
 import Logo from '../assets/pandacoding.png'
+import { Link } from 'react-scroll'
 
 function Home() {
     return (
@@ -13,16 +14,19 @@ function Home() {
 
                 <div className='flex flex-col justify-center h-full px-4'>
                     <p className='text-yellow-400 text-2xl'>Hi, My name is</p>
-                    <h1 className='text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>Thisaru Supun</h1>
+                    <h1 className='text-4xl sm:text-7xl font-bold text-[#ccd6f6] pt-6'>Thisaru Supun</h1>
                     <h2 className='text-3xl sm:text-5xl text-[#8892b0] py-6'>I'm a Full Stack Developer</h2>
 
                     <div>
-                        <button className='text-white group bg-gradient-to-b from-gray-900 to-black rounded-xl px-6 py-3 my-2 flex items-center shadow-sm shadow-gray-400 hover:shadow-blue-600'>
-                            View Work
-                            <span className='group-hover:rotate-90 duration-500'>
-                                <MdOutlineKeyboardArrowRight size={25} className='ml-1' />
-                            </span>
-                        </button>
+                        <Link to='projects' smooth duration={500}>
+                            <button className='text-white group bg-gradient-to-b from-gray-900 to-black rounded-xl px-6 py-3 my-2 flex items-center shadow-sm shadow-gray-400 hover:shadow-blue-600'>
+                                View Work
+                                <span className='group-hover:rotate-90 duration-500'>
+                                    <MdOutlineKeyboardArrowRight size={25} className='ml-1' />
+                                </span>
+                            </button>
+                        </Link>
+
                     </div>
 
                 </div>
