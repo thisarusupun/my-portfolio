@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 import HTML from '../assets/html.png';
 import CSS from '../assets/css.png';
@@ -10,8 +10,11 @@ import SpringBoot from '../assets/springboot.png';
 import MySQL from '../assets/mysql.png';
 import Mongo from '../assets/mongo.png';
 import GitHub from '../assets/github.png';
+import ThemeContext from '../context/themeContext';
 
 function Skills() {
+
+    const {theme} = useContext(ThemeContext)
 
     const techs = [
         {
@@ -77,13 +80,17 @@ function Skills() {
     ]
 
     return (
-        <div name='skills'
-            className='bg-gradient-to-b from-gray-900 to-black w-full h-auto sm:min-h-screen sm:h-auto pt-[60px] pb-[10px] px-[10px] sm:px-[50px] md:px-[100px]'>
-            <div className='max-w-screen-lg mx-auto flex flex-col justify-center w-full h-full text-white'>
+        <div
+            name='skills'
+            className=
+            {`${theme ? 'bg-gradient-to-b from-gray-900 to-black text-white' : 'bg-white text-black'}
+            w-full h-auto sm:min-h-screen sm:h-auto pt-[60px] pb-[10px] px-[10px] sm:px-[50px] md:px-[100px]`}>
+
+            <div className='max-w-screen-lg mx-auto flex flex-col justify-center w-full h-full'>
                 
                 <div>
                     <p className='text-4xl font-bold border-b-4 border-gray-500 p-2 inline'>Skills</p>
-                    <p className='py-6'>These are the technologies I work with</p>
+                    <p className='text-2xl pt-6'>These are the technologies I work with</p>
                 </div>
 
                 <div className='w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 text-center py-8 px-12 sm:px-0'>

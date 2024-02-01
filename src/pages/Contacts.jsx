@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import ThemeContext from '../context/themeContext'
 
 function Contacts() {
-  return (
-    <div name='contacts'
-      className='w-full bg-gradient-to-b from-gray-900 to-black p-4 text-white h-auto sm:h-screen pt-[60px] pb-[10px] px-[10px] sm:px-[50px] md:px-[100px]'>
 
+  const {theme} = useContext(ThemeContext)
+
+  return (
+    <div
+      name='contacts'
+      className=
+      {`${theme ? 'bg-gradient-to-b from-gray-900 to-black text-white' : 'bg-white text-black'}
+            w-full h-auto sm:min-h-screen sm:h-auto pt-[60px] pb-[10px] px-[10px] sm:px-[50px] md:px-[100px]`}>
       <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full'>
 
         <div className=''>
           <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Contact</p>
-          <p className='py-6'>Submit to contact me</p>
+          <p className='text-2xl pt-6'>Submit to contact me</p>
         </div>
 
         <div className='flex justify-center items-center'>

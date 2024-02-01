@@ -5,12 +5,13 @@ import Home from "./pages/Home"
 import Projects from "./pages/Projects"
 import Skills from "./pages/Skills"
 import SocialIconBar from "./components/SocialIconBar"
+import ThemeContextProvider from "./context/ThemeContextProvider"
 
 function App() {
   
   return (
 
-    <div>
+    <ThemeContextProvider>
 
       <Navbar/>
       <Home/>
@@ -20,7 +21,7 @@ function App() {
       <Contacts/>
       <SocialIconBar/>
 
-    </div>
+    </ThemeContextProvider>
   )
 }
 

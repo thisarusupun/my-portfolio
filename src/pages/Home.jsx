@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
 import Logo from '../assets/pandacoding.png'
 import { Link } from 'react-scroll'
+import ThemeContext from '../context/themeContext'
 
 function Home() {
+
+    const {theme} = useContext(ThemeContext)
+
     return (
         <div
             name='home'
-            className='bg-gradient-to-b from-gray-900 to-black w-full h-auto sm:h-screen pt-[60px] pb-[10px] px-[10px] sm:px-[50px] md:px-[100px]'>
+            className=
+            {`${theme ? 'bg-gradient-to-b from-gray-900 to-black text-white' : 'bg-white text-black'}
+            w-full h-auto sm:h-screen pt-[60px] pb-[10px] px-[10px] sm:px-[50px] md:px-[100px]`}>
 
             {/* container */}
             <div className='max-w-screen-lg mx-auto px-4 flex flex-col items-center justify-center h-full md:flex-row'>
