@@ -6,7 +6,7 @@ import userregistration from "../assets/user-registration.png"
 import weatherapplication from "../assets/weather-application.png"
 import { GoCodeReview } from "react-icons/go"
 import { GoRocket } from "react-icons/go"
-import ThemeContext from '../context/themeContext'
+import ThemeContext from '../context/ThemeContext'
 
 function Projects() {
 

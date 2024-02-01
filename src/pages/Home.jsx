@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
 import Logo from '../assets/pandacoding.png'
 import { Link } from 'react-scroll'
-import ThemeContext from '../context/themeContext'
+import ThemeContext from '../context/ThemeContext'
 
 function Home() {
 

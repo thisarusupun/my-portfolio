@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import Logo from '../assets/pandacoding.png'
 import { Link } from 'react-scroll'
-import ThemeContext from '../context/themeContext'
+import ThemeContext from '../context/ThemeContext'
 import { MdDarkMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
 

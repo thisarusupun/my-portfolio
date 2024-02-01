@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
-import ThemeContext from '../context/themeContext'
+import ThemeContext from '../context/ThemeContext'
 
 function About() {
 

@@ -10,7 +10,7 @@ import SpringBoot from '../assets/springboot.png';
 import MySQL from '../assets/mysql.png';
 import Mongo from '../assets/mongo.png';
 import GitHub from '../assets/github.png';
-import ThemeContext from '../context/themeContext';
+import ThemeContext from '../context/ThemeContext';
 
 function Skills() {
 
