@@ -11,7 +11,7 @@ import MySQL from "../assets/mysql.png";
 import Mongo from "../assets/mongo.png";
 import GitHub from "../assets/github.png";
 import NodeJS from "../assets/nodejs.png";
-import ExpressJS from "../assets/expressjs.png"
+import ExpressJS from "../assets/expressjs.png";
 import ThemeContext from "../context/ThemeContext";
 
 function Skills() {
@@ -24,9 +24,29 @@ function Skills() {
       style: "shadow-red-500",
     },
     {
+      src: JavaScript,
+      title: "Java Script",
+      style: "shadow-yellow-500",
+    },
+    {
       src: SpringBoot,
       title: "Spring Boot",
       style: "shadow-green-500",
+    },
+    {
+      src: ReactImg,
+      title: "React JS",
+      style: "shadow-sky-600",
+    },
+    {
+      src: NodeJS,
+      title: "Node JS",
+      style: "shadow-lime-500",
+    },
+    {
+      src: ExpressJS,
+      title: "Express JS",
+      style: "shadow-zinc-600",
     },
     {
       src: HTML,
@@ -38,26 +58,13 @@ function Skills() {
       title: "CSS",
       style: "shadow-blue-500",
     },
-    {
-      src: JavaScript,
-      title: "Java Script",
-      style: "shadow-yellow-500",
-    },
-    {
-      src: ReactImg,
-      title: "React JS",
-      style: "shadow-blue-600",
-    },
+
     {
       src: Tailwind,
       title: "Tailwind CSS",
-      style: "shadow-sky-500",
+      style: "shadow-indigo-500",
     },
-    {
-      src: GitHub,
-      title: "Github",
-      style: "shadow-gray-400",
-    },
+
     {
       src: MySQL,
       title: "MySQL",
@@ -69,16 +76,10 @@ function Skills() {
       style: "shadow-green-500",
     },
     {
-      src: NodeJS,
-      title: "Node JS",
-      style: "shadow-green-500",
-    },
-    ,
-    {
-      src: ExpressJS,
-      title: "Express JS",
+      src: GitHub,
+      title: "Github",
       style: "shadow-gray-400",
-    }
+    },
   ];
 
   return (
@@ -105,7 +106,7 @@ function Skills() {
           {techs.map((tech, index) => (
             <div
               key={index}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${tech.style}`}
+              className={`shadow-md hover:scale-110 duration-500 py-2 rounded-lg ${tech.style}`}
             >
               <img src={tech.src} alt="" className="w-20 h-20 mx-auto" />
               <p className="mt-4">{tech.title}</p>
