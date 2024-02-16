@@ -40,7 +40,7 @@ function Navbar() {
     return (
         <div
             className={`fixed w-full h-[50px] flex justify-between items-center px-4 
-        ${theme ? 'bg-gradient-to-b from-gray-900 to-black text-yellow-300' : 'bg-slate-300 text-black'}`}>
+        ${theme ? 'bg-gradient-to-b from-gray-900 to-black text-gray-400' : 'bg-slate-300 text-black'}`}>
 
             <div>
                 <img src={Logo} alt="Logo Image" className='w-[35px] rounded-full' />
@@ -51,7 +51,7 @@ function Navbar() {
                 {/* Menu */}
                 <ul className='hidden md:flex'>
                     {links.map(({ id, link }) => (
-                        <li key={id} className='px-4 cursor-pointer capitalize font-medium hover:scale-105 duration-200'>
+                        <li key={id} className='px-4 cursor-pointer capitalize font-medium hover:text-white hover:scale-125 duration-200'>
                             <Link to={link} smooth duration={500}>{link}</Link>
                         </li>
                     ))}
@@ -75,7 +75,7 @@ function Navbar() {
 
                 {/* dark mode button */}
                 <div>
-                    <button
+                    <button className='hover:scale-125 hover:text-yellow-300 duration-200'
                         onClick={() => setTheme(!theme)}>
                         {theme ? <MdOutlineLightMode size={20}/> : <MdDarkMode size={20}/>}
                     </button>
