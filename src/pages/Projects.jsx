@@ -67,7 +67,7 @@ function Projects() {
       className={`${
         theme
           ? "bg-gradient-to-b from-gray-900 to-black text-white"
-          : "bg-white text-black"
+          : "bg-gray-200 text-black"
       }
             w-full h-auto sm:min-h-screen sm:h-auto pt-[60px] pb-[10px] px-[10px] sm:px-[50px] md:px-[100px] sm:pb-[50px]`}
     >
@@ -90,11 +90,11 @@ function Projects() {
                 <img
                   src={src}
                   alt=""
-                  className="rounded-md duration-200 hover:scale-105 w-[200px] h-[150px] sm:h-[200px] sm:w-full"
+                  className="rounded-md duration-200 hover:scale-105 w-[150px] h-[100px] sm:h-[200px] sm:w-full"
                 />
 
                 <div className="flex-col items-center justify-center py-2">
-                  <p className="text-center hover:text-yellow-400 text-lg">
+                  <p className="text-center hover:text-yellow-400 text-md sm:text-lg">
                     {name}
                   </p>
 

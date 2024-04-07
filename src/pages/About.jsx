@@ -11,7 +11,7 @@ function About() {
       className={`${
         theme
           ? "bg-gradient-to-b from-gray-900 to-black text-white"
-          : "bg-white text-black"
+          : "bg-gray-200 text-black"
       }
             w-full h-auto sm:min-h-screen sm:h-auto pt-[60px] pb-[10px] px-[10px] sm:px-[50px] md:px-[100px]`}
     >
@@ -34,7 +34,7 @@ function About() {
             </p>
 
             <div>
-              <a href="/cv.pdf">
+              <a href="">
                 <button className="text-white group bg-gradient-to-b from-gray-900 to-black rounded-xl px-6 py-3 my-2 flex items-center shadow-sm shadow-gray-400 hover:shadow-blue-600">
                   Resume
                   <span className="group-hover:rotate-90 duration-500">

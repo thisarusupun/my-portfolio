@@ -10,7 +10,7 @@ function Contacts() {
       className={`${
         theme
           ? "bg-gradient-to-b from-gray-900 to-black text-white"
-          : "bg-white text-black"
+          : "bg-gray-200 text-black"
       }
             w-full h-auto sm:min-h-screen sm:h-auto pt-[60px] pb-[10px] px-[10px] sm:px-[50px] md:px-[100px]`}
     >
