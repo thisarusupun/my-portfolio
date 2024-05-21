@@ -34,7 +34,7 @@ function About() {
             </p>
 
             <div>
-              <a href="">
+              <a href="/cv.pdf">
                 <button className="text-white group bg-gradient-to-b from-gray-900 to-black rounded-xl px-6 py-3 my-2 flex items-center shadow-sm shadow-gray-400 hover:shadow-blue-600">
                   Resume
                   <span className="group-hover:rotate-90 duration-500">

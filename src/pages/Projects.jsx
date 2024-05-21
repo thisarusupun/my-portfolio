@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
-import currencyconverter from "../assets/currency-converter.png";
-import bookstore from "../assets/bookstore-mern.png";
-import moviereviews from "../assets/moviereviews.png";
-import employeems from "../assets/Employee-MS.png";
-import userregistration from "../assets/user-registration.png";
-import weatherapplication from "../assets/weather-application.png";
+import { useContext } from "react";
+import currencyconverter from "../assets/projects/currency-converter.png";
+import bookstore from "../assets/projects/bookstore-mern.png";
+import moviereviews from "../assets/projects/moviereviews.png";
+import employeems from "../assets/projects/Employee-MS.png";
+
+import userregistration from "../assets/projects/user-registration.png";
+import weatherapplication from "../assets/projects/weather-application.png";
 import { GoCodeReview } from "react-icons/go";
 import { GoRocket } from "react-icons/go";
 import ThemeContext from "../context/ThemeContext";

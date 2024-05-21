@@ -1,17 +1,20 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 
-import HTML from "../assets/html.png";
-import CSS from "../assets/css.png";
-import JavaScript from "../assets/javascript.png";
-import ReactImg from "../assets/react.png";
-import Tailwind from "../assets/tailwind.png";
-import Java from "../assets/java.png";
-import SpringBoot from "../assets/springboot.png";
-import MySQL from "../assets/mysql.png";
-import Mongo from "../assets/mongo.png";
-import GitHub from "../assets/github.png";
-import NodeJS from "../assets/nodejs.png";
-import ExpressJS from "../assets/expressjs.png";
+import HTML from "../assets/skills/html.png";
+import CSS from "../assets/skills/css.png";
+import JavaScript from "../assets/skills/javascript.png";
+import ReactJS from "../assets/skills/react.png";
+import NextJS from "../assets/skills/nextjs.png";
+import Tailwind from "../assets/skills/tailwind.png";
+import Java from "../assets/skills/java.png";
+import SpringBoot from "../assets/skills/springboot.png";
+import MySQL from "../assets/skills/mysql.png";
+import Mongo from "../assets/skills/mongo.png";
+import GitHub from "../assets/skills/github.png";
+import NodeJS from "../assets/skills/nodejs.png";
+import NestJS from "../assets/skills/nestjs.png";
+import Docker from "../assets/skills/docker.png";
+import ExpressJS from "../assets/skills/expressjs.png";
 import ThemeContext from "../context/ThemeContext";
 
 function Skills() {
@@ -28,15 +31,22 @@ function Skills() {
       title: "Java Script",
       style: "shadow-yellow-500",
     },
+
     {
-      src: SpringBoot,
-      title: "Spring Boot",
-      style: "shadow-green-500",
-    },
-    {
-      src: ReactImg,
+      src: ReactJS,
       title: "React JS",
       style: "shadow-sky-600",
+    },
+    {
+      src: NextJS,
+      title: "Next JS",
+      style: "shadow-gray-600",
+    },
+
+    {
+      src: ExpressJS,
+      title: "Express JS",
+      style: "shadow-zinc-600",
     },
     {
       src: NodeJS,
@@ -44,9 +54,14 @@ function Skills() {
       style: "shadow-lime-500",
     },
     {
-      src: ExpressJS,
-      title: "Express JS",
-      style: "shadow-zinc-600",
+      src: NestJS,
+      title: "Nest JS",
+      style: "shadow-red-500",
+    },
+    {
+      src: SpringBoot,
+      title: "Spring Boot",
+      style: "shadow-green-500",
     },
     {
       src: HTML,
@@ -79,6 +94,11 @@ function Skills() {
       src: GitHub,
       title: "Github",
       style: "shadow-gray-400",
+    },
+    {
+      src: Docker,
+      title: "Docker",
+      style: "shadow-sky-400",
     },
   ];
 
