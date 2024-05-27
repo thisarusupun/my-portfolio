@@ -3,6 +3,7 @@ import currencyconverter from "../assets/projects/currency-converter.png";
 import bookstore from "../assets/projects/bookstore-mern.png";
 import moviereviews from "../assets/projects/moviereviews.png";
 import employeems from "../assets/projects/Employee-MS.png";
+import contacts from "../assets/projects/contact.jpeg";
 
 import userregistration from "../assets/projects/user-registration.png";
 import weatherapplication from "../assets/projects/weather-application.png";
@@ -14,6 +15,12 @@ function Projects() {
   const { theme } = useContext(ThemeContext);
 
   const projects = [
+    {
+      name: "Contacts Application",
+      src: contacts,
+      demo: "https://contacts-application-client.vercel.app/",
+      code: "https://github.com/thisarusupun/contacts-application.git",
+    },
     {
       name: "Employee Management System",
       src: employeems,
