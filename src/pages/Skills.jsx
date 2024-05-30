@@ -3,6 +3,7 @@ import { useContext } from "react";
 import HTML from "../assets/skills/html.png";
 import CSS from "../assets/skills/css.png";
 import JavaScript from "../assets/skills/javascript.png";
+import typescript from "../assets/skills/typescript.png";
 import ReactJS from "../assets/skills/react.png";
 import NextJS from "../assets/skills/nextjs.png";
 import Tailwind from "../assets/skills/tailwind.png";
@@ -28,8 +29,13 @@ function Skills() {
     },
     {
       src: JavaScript,
-      title: "Java Script",
+      title: "JavaScript",
       style: "shadow-yellow-500",
+    },
+    {
+      src: typescript,
+      title: "TypeScript",
+      style: "shadow-blue-500",
     },
 
     {
